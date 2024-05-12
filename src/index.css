@@ -1,0 +1,261 @@
+html, body {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+input, textarea {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 12px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #f9e400;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.card1 {
+  width: 50%;
+  padding: 40px 30px 10px;
+  background-color: #fff;
+}
+
+.card2 {
+  width: 50%;
+  background-image: linear-gradient(to right, #f9e400, #ffee2f,  #004594, #0008a4 );
+}
+
+#logo {
+  width: 70px;
+  height: 60px;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.form-control-label {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.msg-info {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.btn-color {
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, #f9e400, #000794);
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  margin-top: 40px;
+}
+
+.btn-color:hover {
+  background-image: linear-gradient(to right, #000794,#f9e400 );
+}
+
+.btn-white {
+  border-radius: 50px;
+  color: #f9e400;
+  background-color: #fff;
+  padding: 8px 40px;
+  cursor: pointer;
+  border: 2px solid #f9e400;
+}
+
+.btn-white:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #f9e400, #000794);
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.sm-text {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  
+  .card1 {
+      width: 100%;
+      padding: 40px 30px 10px;
+  }
+
+  .card2 {
+      width: 100%;
+  }
+
+  .right {
+      margin-top: 100px;
+      margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  
+
+  .card2 {
+      padding: 50px;
+  }
+
+  .right {
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  .products-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .product{
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-right: 24px;
+    transition: all 0.3s ease-in-out;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  .product:hover{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media(min-width: 768px){
+    .product{
+      width: 300px;
+    }
+  }
+  
+  .product .product-img{
+    width: 180px;
+    height: 215px;
+  }
+  
+  .product .product-img img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product .product-text{
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .product .product-text.title{
+    color: #e00a02;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .product .product-text.description{
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .product .product-text.price{
+    font-weight: 600;
+  }
+  
+  .product .product-text.cart-price{
+    font-weight: 600;
+    color: #e00a02;
+  }
+  
+  .cart-btn{
+    position: relative;
+  }
+  
+  .cart-menu-btn .cart-indicator{
+    width: 18px;
+    background-color: #e00a02;
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    top: -17px;
+    right:-15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product .quantity-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 5px;
+    border: 1px solid #dff0d8;
+    border-radius: 8px;
+  }
+  
+  .product .quantity-box .action-btn{
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
